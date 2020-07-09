@@ -1,0 +1,31 @@
+body{
+    background-color: #91c8ff;
+    text-align: center;
+    margin: 0;
+
+}
+
+.commands {    
+    background-color: black;
+    margin-bottom: 20px;
+}
+
+#insert,
+#enter{
+    color: #fff;
+    display: inline-block;
+    font-size: large;
+}
+
+
+.inputField {
+    display: inline-block;
+    background-color: #fff;
+    font-size: 1rem;
+    line-height: 1;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    margin: 10px;
+    padding: 4px 4px;
+    width: 25%;
+}
