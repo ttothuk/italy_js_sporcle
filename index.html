@@ -4,20 +4,47 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+        integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
+        crossorigin="anonymous" />
     <title>Italy</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+
+
+
     <div class="commands">
+        
         <p id="enter">Enter region: </p>
         <input type="text" name="inputCountryName" id="inputCountryName" class="inputField" />
         <p class="countClass" id="insert">0/22</p>
+
+        <!-- SIDEBAR OPEN -->
+        <div id="main">
+            <button class="openbtn" onclick="openNav()">&#9776; Open Sidebar</button>
+        </div>
+        
+
     </div>
 
     <div class="wrapper">
         <object data="italy.svg" type="image/svg+xml" id="italysvg" class="map"></object>
+
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="collapse_content">
+                <p id="collapseID" class="collapsible-class">Vatican City</br>San
+                    Marino</br>Abruzzo</br>Basilicata</br>Calabria</br>Campania</br>Emilia-Romagna</br>Friuli-Venezia
+                    Giulia</br>Lazio</br>Liguria</br>Lombardia</br>Marche</br>Molise</br>Piemonte</br>Puglia</br>Sardegna</br>Sicilia</br>Toscana</br>Trentino-Alto
+                    Adige</br>Umbria</br>Valle d'Aosta</br>Veneto
+                </p>
+            </div>
+        </div>
     </div>
+
 
     <script src="app.js"></script>
 </body>
