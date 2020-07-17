@@ -73,6 +73,8 @@ window.addEventListener("load", function () {
 /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
 function openNav() {
     let sidebarLength = document.getElementById("mySidebar");
+    
+/*
     if (sidebarLength.style.width == "0px") {
         sidebarLength.style.width = "500px";
         console.log("open");
@@ -80,6 +82,16 @@ function openNav() {
     else{
         closeNav();
         console.log("close");
+    }*/
+
+
+    if (!(sidebarLength.style.width < "1px")) {
+        closeNav();
+        console.log("close");
+    }
+    else{
+        sidebarLength.style.width = "500px";
+        console.log("open");
     }
     //document.getElementById("main").style.marginLeft = "500px";
 }
@@ -87,5 +99,6 @@ function openNav() {
 /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
 function closeNav() {
     document.getElementById("mySidebar").style.width = "0";
+    console.log("close");
     //document.getElementById("main").style.marginLeft = "0";
 }
