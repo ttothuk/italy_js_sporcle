@@ -59,7 +59,7 @@ window.addEventListener("load", function () {
                 }
 
                 let brk = sum_before.toString().split(',');
-                let res = brk.join("<br>");
+                let res = brk.join(" <br> ");
                 collapsible_class_p.innerHTML = res;
 
                 this.value = "";
@@ -72,7 +72,15 @@ window.addEventListener("load", function () {
 
 /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
 function openNav() {
-    document.getElementById("mySidebar").style.width = "500px";
+    let sidebarLength = document.getElementById("mySidebar");
+    if (sidebarLength.style.width == "0px") {
+        sidebarLength.style.width = "500px";
+        console.log("open");
+    }
+    else{
+        closeNav();
+        console.log("close");
+    }
     //document.getElementById("main").style.marginLeft = "500px";
 }
 
